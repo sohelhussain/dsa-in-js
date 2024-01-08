@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="elment">
+    <button onclick="getElement()">Get a array number</button>
+
+    <script>
+
+        // ------------***------treversing----***---------
+
+
+
+        let data = [9,45,2,8,45,23,7,78,0,11,41,77]
+        for(let i=0; i<data.length; i++){
+            console.log("Array is = " + i + ":- " + data[i]);
+        }
+        // let values = Number(prompt("write 1 to 11 numbers"));
+        // let values = 1; 
+        // console.log(data[values]);
+
+        const getElement = () => {
+            let el = document.querySelector("#elment").value
+            if(el<data.length && typeof parseInt(el) === "number"){  // bug:- we give a value in (-) input then the show the result is undefind 
+                
+            console.log(data[el]);
+            }
+            else{
+                console.warn("please valid input");
+            }
+        }
+    </script>
+</body>
+</html>

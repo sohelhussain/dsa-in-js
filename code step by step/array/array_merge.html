@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let data = [3,7,12,34,56,90];
+        let arr = [20,30,40,50]
+        let merge = [];
+
+        for (let i = 0; i < data.length; i++){
+            merge[i] = data[i];
+        }
+        for (let j = 0; j < arr.length; j++){
+                merge[data.length + j] = arr[j];
+            }
+            console.log(merge);
+
+
+
+            // there is short mehthord of merging a array
+
+            let merge1 = [...data,...arr];
+            console.log(merge1);
+
+
+
+            // how to rever an array
+
+
+
+            let reverse = [1,2,3,4,5];
+            console.log(reverse.reverse());
+    </script>
+</body>
+</html>

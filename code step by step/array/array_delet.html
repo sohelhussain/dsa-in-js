@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <input id="first" type="text" placeholder="give me a number">
+    <button onclick="hitBtn()" id="btn">Hit me</button>
+
+
+    <script>
+
+        // let arr = [23,34,45,234,456,56];
+        // let position = 3;
+        // for(let i = arr.length - 1; i >= position; i--){
+        //     arr[i-1] = arr[i];
+        //     if(i == position){
+        //         arr[i] = position
+        //         console.log(arr);
+        //     }
+        // }
+
+            const hitBtn = () => {
+                let data = [30,20,45,76,20,80];
+                let position = document.querySelector('#first').value;
+                position = parseInt(position)  // isme apne isse number me badla hai
+                for(let i = position; i < data.length-1; i++){
+                    data[i] = data[i+1];        // iska matlab hai ki data[i] he usme data[i+1] daldo matlab data[i] (76he) to usme data[i+1] daldo matlab data[i+1] (76he) to usme data[i+1] (uski agali value 20 daldo), ese hi data[i+1] (20 ajayega) to usme data[i+1] (uski agali value 80 daldo), fir data[i+1] (80 ajayga) to usme data[i+1] (uski agali value undefined ajayega kyoki usme vhan par koi value nhi he)
+                    // console.log(data[i]);
+                }
+                data.length = data.length-1;
+                console.log(data);
+    }
+    hitBtn();
+    </script>
+</body>
+</html>

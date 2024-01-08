@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searching in array</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="in" placeholder="give a number">
+    <button onclick="search()">Hit me</button>
+    
+    <script>
+        const search = () => {
+            let arr = [1,2,3,4,5];
+        let searching = document.querySelector("#in").value;
+        searching = parseInt(searching);
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (searching == arr[i]) {
+                index = i;
+                break;
+            }
+        };
+        console.log(index);
+        }
+    </script>
+</body>
+</html>
