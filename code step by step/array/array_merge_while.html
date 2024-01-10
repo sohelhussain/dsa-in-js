@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <input id="first" type="text" placeholder="give me a number">
+    <button onclick="hitBtn()" id="btn">Hit me</button>
+
+
+    <script>
+
+        // if we see in the turms time and space complexity. then the we using shorting and merging together then the best for this method rather then privius
+        
+        let data = [3,7,12,34,56,90];
+        let arr = [4,9,25,45];
+        let emt = [];
+        let i = 0;
+        let j = 0;
+        let e = 0;
+        while (i < arr.length && j < arr.length) {
+            if(data[i] < arr[j]) {
+                emt[e] = data[i];
+                i++;
+            }else{
+                emt[e] = arr[j];
+                j++;
+            }
+            e++;
+        };
+        console.log(j);
+        while (i < data.length) {
+            emt[e] = data[i];
+            i++;
+            e++;
+        }
+        console.log(emt);  // 45 missing elements
+    </script>
+</body>
+</html>
