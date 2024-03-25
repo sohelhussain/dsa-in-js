@@ -80,3 +80,14 @@
 //     }
 //     console.log(outer);
 // }
+
+
+// there is a onther solution of this problem
+
+// for(let row = 4; row >= 0; row--) {
+//      let outer = "";
+//      for(let col = 0; col <= row; col++){
+//           outer += "* "
+//      }
+//      console.log(outer);
+// }
