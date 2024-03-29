@@ -34,3 +34,4 @@ poop()
 poop()
 console.log(arr);
 console.log(arr.length);
+
