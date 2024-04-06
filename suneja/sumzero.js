@@ -20,3 +20,28 @@ for (let i = 0; i < arr.length; i++) {
 } */
 
 // -------> the time complexity is quadratic o(n^2);
+
+
+
+
+// ----------------------------------------------------------------> optimiz solutions
+
+
+
+const arr = [-5, -4, -3, -2, 0, 2, 4, 6, 8];
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 0){
+        for(let j = arr.length; j >= 0; j--){
+            if(arr[i] + arr[j] === 0) {
+                console.log(arr[i], arr[j]);
+            }
+        }
+    }
+}
+
+
+
+
+
+
