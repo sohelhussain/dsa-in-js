@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let arr = [];
+        let currentSize = arr.length;
+
+        const poosh = val => {
+            arr[currentSize] = val;
+            currentSize++;
+        } 
+        poosh(20);
+        poosh(56);
+        console.log(arr);
+
+
+    </script>
+</body>
+</html>
