@@ -1,15 +1,28 @@
 // finde a largest number of elements in the array
 
-let arr = [1,2,3,4,5,60,7,8,9];
+let arr = [10,32,53,14,25,60,78,8,19];
 
-let max = 0;
+// let max = 0;
+// const arrfunc = arr => {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//         return max;
+//     }
+// }
+// const ans = arrfunc(arr);
+// console.log(ans);
+
 const arrfunc = arr => {
-    for(let i = 0; i < arr.length; i++){
+    let max = arr[0]; // Initialize max to the first element of the array
+    for(let i = 1; i < arr.length; i++){ // Start loop from the second element
         if(arr[i] > max){
             max = arr[i];
         }
-        return max;
     }
+    return max; // Return the max value after the loop ends
 }
+
 const ans = arrfunc(arr);
 console.log(ans);
